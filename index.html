@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calc_screen" id="screen"></div>
+        <div class="calc_keys">
+            <button class="calc_key calc_operator" onclick="all_operator(`+`)">+</button>
+            <button class="calc_key calc_operator" onclick="all_operator(`-`)">-</button>
+            <button class="calc_key calc_operator" onclick="all_operator(`*`)">&times;</button>
+            <button class="calc_key calc_operator" onclick="all_operator(`÷`)">÷</button>
+            <button class="calc_key" onclick="change_text(7)">7</button>
+            <button class="calc_key" onclick="change_text(8)">8</button>
+            <button class="calc_key" onclick="change_text(9)">9</button>
+            <button class="calc_key" onclick="change_text(4)">4</button>
+            <button class="calc_key" onclick="change_text(5)">5</button>
+            <button class="calc_key" onclick="change_text(6)">6</button>
+            <button class="calc_key" onclick="change_text(1)">1</button>
+            <button class="calc_key" onclick="change_text(2)">2</button>
+            <button class="calc_key" onclick="change_text(3)">3</button>
+            <button class="calc_key decimal" onclick="change_text(`.`)">.</button>
+            <button class="calc_key" onclick="change_text(0)">0</button>
+            <button class="calc_key calc_AC" onclick="clear_screen()">AC</button>
+            <button class="calc_key calc_enter" onclick="enter()">=</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+</html>
